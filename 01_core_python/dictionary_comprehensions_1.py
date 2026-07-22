@@ -10,6 +10,8 @@ print(discount_fruits)
 
 # Dictionary comprehension version
 
+#problem 1
+
 '''
 calculates the anual salary of the employee,
 based on the monthly salaries
@@ -20,6 +22,8 @@ monthly_salary = {"bob" : 90000,
                   "john"  : 120000}
 anual_salary = {a:b*12 for a,b in monthly_salary.items()}
 print(anual_salary)
+
+#problem 2
 
 '''
 create a new dictionary of only the servers with an
