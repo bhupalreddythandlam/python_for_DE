@@ -1,12 +1,19 @@
 try:
     for i in range(1,10):
-        print(c)
+        print(j)
 except NameError:
     print("there is a name error check the code again!")
 
 '''
 this is the sample program for error handling
 '''
+
+total_sales = 5000
+num_orders = 0
+try:
+    print(total_sales/num_orders)
+except ZeroDivisionError:
+    print("number of orders is zero!")
 
 # problem 1
 
