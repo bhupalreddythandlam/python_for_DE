@@ -39,3 +39,17 @@ try:
         print(api_response["humidity"])
 except KeyError:
     print("humidity data missing!")
+
+# problem 3
+uptime_data = {"server_1": "45", "server_2": "error"}
+servers_to_check = ["server_1", "server_2", "server_3"]
+
+for server in servers_to_check:
+    try:
+        print(f"{server} : {int(uptime_data[server]) }")
+    except ValueError:
+        print(f"value error at {server} : {uptime_data[server]}")
+    except KeyError:
+        print(f"key error at {server}")
+    finally:
+        print(f"--- Check complete for {server} ---")
