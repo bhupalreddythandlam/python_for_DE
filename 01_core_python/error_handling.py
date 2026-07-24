@@ -44,6 +44,11 @@ except KeyError:
 uptime_data = {"server_1": "45", "server_2": "error"}
 servers_to_check = ["server_1", "server_2", "server_3"]
 
+'''
+goal is to loop through servers_to_check and 
+try to print the server's uptime as an integer using int(uptime_data[server]
+'''
+
 for server in servers_to_check:
     try:
         print(f"{server} : {int(uptime_data[server]) }")
