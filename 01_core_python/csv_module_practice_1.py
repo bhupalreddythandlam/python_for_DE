@@ -1,26 +1,28 @@
 import csv
 
-path=r'C:\Users\thand\OneDrive\projects\python for DE\01_core_python\students.csv'
-top_student_list=[]
-average_student_list=[]
+path = r'C:\Users\thand\OneDrive\projects\python for DE\01_core_python\students.csv'
+students_list = []
+top_students = []
 
-with open(path,"r") as student:
-    reader=csv.reader(student)
-    header=next(reader)
-    for row in reader:
-        if row[2]=="A":
-            top_student_list.append(row)
-        else:
-            average_student_list.append(row)
+with open(path,"r") as students:
+    student_data = csv.reader(students)
+    for student in student_data:
+        students_list.append(student)
 
+'''
+the module csv automatically reads the data in csv file
+no need to so extra operations like strip(),split(",")
+'''
 
-print(header)
-print("-----Average students data-----")
-for row in average_student_list:
-    print(row)
+for i in students_list:
+    print(i)
+
+top_students=[student for student in students_list if student[2]=="A"]
 
 print()
 
-print("-----top students data-----")
-for row in top_student_list:
-    print(row)
+for i in top_students:
+    print(i)
+
+
+
