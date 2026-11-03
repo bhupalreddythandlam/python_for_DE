@@ -1,3 +1,10 @@
+"""
+Goal: Create a UserAccount class that takes a password in __init__.
+
+The Rules: Create a getter and setter for password. The setter must check the length of the string using the len() function. If the password is less than 8 characters, print "Password too short!" and set the private attribute to "DEFAULT_PASS". Otherwise, set it to the provided password.
+
+"""
+
 class UserAccount:
 
     default_pass="12345678"

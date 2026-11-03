@@ -1,3 +1,15 @@
+"""
+
+Goal: Create a CargoShip class that takes two arguments in __init__: cargo_weight and speed.
+
+The Rules: You must route both attributes through their own separate getters and setters.
+
+cargo_weight cannot be negative (set to 0 if it is).
+
+speed cannot exceed 100 (cap at 100).
+
+"""
+
 class CargoShip:
     def __init__(self,weight,speed):
         self.cargo_weight=weight
